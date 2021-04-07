@@ -1,0 +1,168 @@
+<div class="flex-container-box">
+    <div class="wrap-collabsible flex-container-box-hijo">
+        <img class="img_ali" src="https://www.siigo.com/wp-content/uploads/2020/06/buk-8-1.png" alt="">    
+        <input id="collapsible190" class="toggle" type="checkbox">
+        <label for="collapsible190" class="lbl-toggle" tabindex="0"></label>
+            <div class="collapsible-content">
+                <div class="content-inner">
+                    <p class="content-text">Si eres una empresa con + 250 empleados, con alta complejidad en nómina y estructura, Siigo te tiene la solución!.</p>
+                    <a class="enlaces_btn" href="https://buk.co/siigo-landing/" target="_blank">Más información</a>
+                </div>
+            </div>
+    </div>
+    <div class="wrap-collabsible flex-container-box-hijo">
+        <img class="img_ali" src="https://www.siigo.com/wp-content/uploads/2020/10/thike.jpg" alt="">    
+        <input id="collapsible192" class="toggle" type="checkbox">
+        <label for="collapsible192" class="lbl-toggle" tabindex="0"></label>
+            <div class="collapsible-content">
+                <div class="content-inner">
+                    <p class="content-text">Pensando en la importancia que hoy significa dominar una segunda lengua, hemos realizado una gran alianza con uno de los mejores sistemas para aprender inglés.​</p>
+                </div>
+            </div>
+    </div>
+    <div class="wrap-collabsible flex-container-box-hijo">
+        <img class="img_ali" src="https://www.siigo.com/wp-content/uploads/2020/06/1doc3-8.png" alt="">    
+        <input id="collapsible193" class="toggle" type="checkbox">
+        <label for="collapsible193" class="lbl-toggle" tabindex="0"></label>
+            <div class="collapsible-content">
+                <div class="content-inner">
+                    <p class="content-text">Por ser parte de la familia Siigo, recibe atención médica virtual por $7.900 + iva. Aplica para tus empleados y tu grupo familiar. El primer mes de consulta es gratis.</p>
+                    <a class="enlaces_btn" href="https://www.1doc3.com/web/siigo?utm_campaign=CP_Alianzas&utm_medium=email&_hsmi=90665326&_hsenc=p2ANqtz-8xt-hmETOCI0NbVpAHbwCtYx0OjnF6kQ3UuiTnwFraqiwXneS-pY19sKKVS_-fDzwFfIOsTqEKchYgfkH80-r-ylCmmg&utm_content=90665326&utm_source=hs_email" target="_blank">Más información</a>
+                </div>
+            </div>
+    </div>
+
+    <div class="wrap-collabsible flex-container-box-hijo">
+        <img class="img_ali" src="https://www.siigo.com/wp-content/uploads/2020/11/geo-vic.jpg" alt="">    
+        <input id="collapsible195" class="toggle" type="checkbox">
+        <label for="collapsible195" class="lbl-toggle" tabindex="0"></label>
+            <div class="collapsible-content">
+                <div class="content-inner">
+                    <p class="content-text">Siigo y GeoVictoria se unen para facilitar tus procesos de control de empleados y pago de nómina desde tu Siigo nube.</p>
+                    <a class="enlaces_btn" href="https://soluciones.geovictoria.com/siigo_y_geovictoria/" target="_blank">Más información</a>
+                </div>
+            </div>
+    </div>
+
+    <div class="wrap-collabsible flex-container-box-hijo">
+        <img class="img_ali" src="https://www.siigo.com/wp-content/uploads/2020/11/viliv.jpg" alt="">    
+        <input id="collapsible194" class="toggle" type="checkbox">
+        <label for="collapsible194" class="lbl-toggle" tabindex="0"></label>
+            <div class="collapsible-content">
+                <div class="content-inner">
+                    <p class="content-text">Nos aliamos con la plataforma que ofrece diferentes soluciones para Pymes, conoce las diferentes soluciones aqui.</p>
+                    <a class="enlaces_btn" href="https://viliv.com.co/servicios/" target="_blank">Más información</a>
+                </div>
+            </div>
+    </div>
+
+</div>
+
+<style>
+    #collapsible190, #collapsible191, #collapsible192,
+    #collapsible193, #collapsible194, #collapsible195{
+
+	    display: none;
+    }
+
+    
+    .flex-container-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding:5px;
+    }
+    .flex-container-box-hijo {
+    width: 30%;
+    height: auto;
+    max-width: 267px;
+    min-width: 230px;
+    margin: 3px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px 0px rgb(0 0 0 / 53%)
+    }
+    .img_ali{
+    width: 90%;
+    height: 100px;
+    }
+    .wrap-collabsible {
+    margin: 0.5rem;
+    }
+    .lbl-toggle {
+    display: block;
+    outline: none;
+    font-weight: bold;
+    font-family: monospace;
+    padding: 4px;
+    font-size: 0.2rem;
+    text-align: center;
+    color: #DDD;
+    cursor: pointer;
+    transition: all 0.25s ease-out;
+    }
+    .lbl-toggle:hover {
+    color: #747474;
+    }
+    .lbl-toggle::before {
+    content: 'Click Aquí';
+    display: inline-block;
+    text-decoration-line: underline;
+    font-size: 15px;
+    vertical-align: middle;
+    margin-right: .7rem;
+    transition: transform .2s ease-out;
+    color: black;
+    }
+    /* .toggle:checked+.lbl-toggle::before {
+    transform: rotate(90deg) translateX(-3px);
+    } */
+    .collapsible-content {
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height .25s ease-in-out;
+    }
+    .toggle:checked+.lbl-toggle+.collapsible-content {
+    max-height: 350px;
+    }
+    .toggle:checked+.lbl-toggle {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    }
+    .collapsible-content .content-inner {
+    background-color: #F1F4F9;
+    padding: 2%;
+    padding-bottom: 5%;
+    border-radius: 10px;
+    font-family: Muli;
+    font-size: 15px;
+    padding-left: 4%;
+    padding-right: 4%;
+    height: 135px;
+    min-height:  135px !important;
+    }
+
+    .content-text{
+        min-height: 90px !important;
+    }
+
+    
+    .collapsible-content p {
+    margin-bottom: 0;
+    }
+    .enlaces_btn{
+    padding: 2px 5px 2px 5px;
+    background-color: #00aaff;
+    color: #fff;
+    border-radius: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    }
+    .enlaces_btn:hover{
+    background-color: #0088cc;
+    color: #fff;   
+    text-decoration: none;
+    cursor: pointer;
+    }
+    </style>
